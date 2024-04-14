@@ -1,3 +1,5 @@
+import { Empleado } from "./Empleado";
+
 class Profesor extends Empleado{
     constructor(nombre,apellido,estadoCivil,incorporacion,despacho,departamento){
         super(nombre,apellido,estadoCivil,incorporacion,despacho)
@@ -19,3 +21,5 @@ class Profesor extends Empleado{
 
 const listadoProfesor = [];
 listadoProfesor.push(Person);
+
+export {Profesor};

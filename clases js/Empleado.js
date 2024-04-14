@@ -1,3 +1,5 @@
+import { Person } from "./main";
+
 class Empleado extends Person{
     #incorporacion;
     constructor(nombre,apellido,estadoCivil,incorporacion, despacho){
@@ -25,3 +27,4 @@ class Empleado extends Person{
 
 }
 
+export {Empleado};

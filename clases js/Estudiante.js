@@ -1,3 +1,5 @@
+import { Person } from "./main";
+
 class Estudiante extends Person{
     constructor(nombre,apellido,estadoCivil,curso){
         super(nombre,apellido,estadoCivil)
@@ -20,3 +22,5 @@ class Estudiante extends Person{
 }
 const listadoEstudiante= [];
 listadoEstudiante.push();
+
+export {Estudiante};
