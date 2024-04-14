@@ -1,60 +1,38 @@
 class Person{
     static id =  0;
 
-    #nombre; 
-    #apellido; 
-    #id;
-
-    constructor(nombre,apellido,id,estadoCivil){
-        this.#nombre = nombre;
-        this.#apellido = apellido;
-        this.#id = ++Person,id;
-        this.estadoCivil = estadoCivil;
+    constructor(nombre,apellido,estadoCivil){
+        this._nombre = nombre;
+        this._apellido = apellido;
+        this._id = ++Person.id;
+        this._estadoCivil = estadoCivil;
     }
 
     get nombre(){
-        return this.#nombre;
+        return this._nombre;
     }
     get apellido(){
-        return this.#apellido;
+        return this._apellido;
     }
     get id(){
-        return this.#id;
+        return this._id;
     }
     get estadoCivil(){
         return this._estadoCivil;
     }
     set estadoCivil(cambioEc){
-        this._estadoCivil = cambioEc.trim();
+        this._estadoCivil = cambioEc;
     }
 
     imprimir(){
-        return `Nombre:${this.#nombre}</br>Apellido:${this.#apellido}</br>Id:${this.#id}</br>Estado civil:${this.estadoCivil}</br>`;
+        return `Nombre:${this._nombre}
+        Apellido:${this._apellidopellido}
+        Id:${this._id}
+        Estado civil:${this._estadoCivil}`;
     }
 }
 
-class Estudiante extends Person{
-    constructor(nombre,apellido,estadoCivil,curso){
-        super(nombre,apellido,estadoCivil)
-        this.curso = curso;
-    }
-    
-    get curso(){
-        return this._curso;
-    }
 
-    set curso(newCurso){
-        this._curso = newCurso.trim();
-    }
-
-    imprimir(){
-        super.imprimir();
-        return `Curso:${this.curso}<br/>`;
-    }
-
-}
-const listadoEstudiante= [];
-listadoEstudiante.push();
 
 
 class Empleado extends Person{
