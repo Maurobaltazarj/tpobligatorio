@@ -97,7 +97,7 @@ class Profesor extends Empleado{
     guardarDato=()=> this.listadoProfesor.push(this);
 }
 
-class Ps extends Empleado{
+class PersonalDeServicio extends Empleado{
     constructor(nombre,apellido,estadoCivil,incorporacion,despacho,seccion){
         super(nombre,apellido,estadoCivil,incorporacion,despacho)
         this._seccion = seccion;
